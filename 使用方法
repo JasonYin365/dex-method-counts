@@ -1,0 +1,9 @@
+查看android项目中所有方法的个数
+1.下载源码；
+ 将zip包放在一个目录下面，打开压缩包。
+
+2.在mac下，进入到dex-method-counts的目录,利用gradle命名(如果没有请，自行安装
+./gradlew assemble
+会生成dex-method-counts.jar
+
+3.java -jar {dex-method-counts的路径}/dex-method-counts.jar{apk的路径}/App.apk
